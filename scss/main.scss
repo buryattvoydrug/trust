@@ -1,0 +1,14 @@
+$blue:#0767F2;
+$dark:#1A1A1A;
+$light:#fff;
+
+.button {
+  background: $blue;
+  width: 300px;
+  height: 70px;
+
+  //fonts
+  font-weight: 500;
+  color: $light;
+  font-size: 18px;
+}
