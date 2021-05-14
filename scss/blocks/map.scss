@@ -24,3 +24,18 @@
     line-height: 120%;
   }
 }
+@media (max-width:1023px){
+  .map{
+    .map-block{
+      height: 350px;
+    }
+    .map-text{
+      padding: 50px 0 70px;
+      display: flex;
+      flex-direction: column;
+      .time{
+        margin-top: 20px;
+      }
+    }
+  }
+}

@@ -48,3 +48,59 @@
     line-height: 120%;
   }
 }
+@media (max-width:1023px){
+  .clients{
+    padding: 1px 0 140px;
+    .clients-block{
+      flex-direction: column;
+      .client__item{
+        display: block;
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+        .client__img{
+          height: 80px;
+          width: 80px;
+          border-radius: 70px;
+          object-fit: cover;
+          margin-right: 25px;
+        }
+        .client-text{
+          .client__name{
+            position: absolute;
+            top:15px;
+            left:110px;
+          }
+          .client__description{
+            position: absolute;
+            top:40px;
+            left:110px;
+          }
+          .client__text{
+            height: 280px;
+            margin-top: 20px;
+            max-width: auto;
+          }
+        }
+      }
+    }
+    .arrows{
+      left:5%;
+      bottom:-50px;
+      .arrow{
+        padding: 5px;
+      }
+      .arrow:nth-child(2){
+        transform: scale(-1,1);
+      }
+    }
+  
+    //fonts
+    .client__name{
+      font-size: 18px;
+    }
+    .client__description,.client__text{
+      font-size: 16px;
+    }
+  }
+}
