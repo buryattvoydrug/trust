@@ -19,8 +19,9 @@
   }
   .arrows{
     position: absolute;
-    bottom:0;
-    left:315px;
+    width: 40px;
+    bottom:40px;
+    right:150px;
     .arrow{
       padding: 5px;
     }
@@ -53,6 +54,7 @@
     padding: 1px 0 140px;
     .clients-block{
       flex-direction: column;
+      overflow-x: hidden;
       .client__item{
         display: block;
         position: relative;
@@ -77,7 +79,6 @@
             left:110px;
           }
           .client__text{
-            height: 280px;
             margin-top: 20px;
             max-width: auto;
           }
