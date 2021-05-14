@@ -1,11 +1,32 @@
-header{
+header,.footer{
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
   nav{
-    width: 70%;
+    width: 650px;
     .nav{
       width: 100%;
       display: flex;
+      justify-content: space-between;
     }
+  }
+
+  //fonts
+  .logo{
+    font-weight: 900;
+    font-size: 32px;
+    color:$light;
+    strong{
+      color:$blue;
+    }
+  }
+  nav{
+    color:$light;
+  }
+  .phone{
+    font-weight: bold;
+    font-size: 24px;
+    color:$light;
   }
 }

@@ -1,0 +1,14 @@
+footer{
+  background: $dark;
+  padding-bottom: 30px;
+  .footer-bottom{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  //fonts
+  .copyright,.diskl{
+    font-weight: 300;
+    color:$light;
+  }
+}

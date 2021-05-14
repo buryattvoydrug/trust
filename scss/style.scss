@@ -2,6 +2,13 @@
 @import './fonts';
 @import './blocks/header';
 @import './blocks/hero';
+@import './blocks/types';
+@import './blocks/garant';
+@import './blocks/team';
+@import './blocks/client';
+@import './blocks/contact';
+@import './blocks/map';
+@import './blocks/footer';
 
 * {
   box-sizing: border-box;
@@ -11,8 +18,9 @@
 }
 
 .container {
-  margin: 50px auto;
+  margin: 0 auto;
   width: 1240px;
+  position: relative;
 }
 
 li {
@@ -22,11 +30,26 @@ li {
 a,
 a:active,
 a:visited {
-  color: inherit;
   text-decoration: none;
 }
 
 button {
   border: none;
   background: transparent;
+}
+.section__title{
+  margin: 70px 0 20px;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 120%;
+  strong{
+    color:$blue;
+  }
+}
+.section__subtitle{
+  line-height: 120%;
+  font-weight: 300;
+  font-size: 20px;
+  max-width: 45%;
+  margin-bottom: 55px;
 }

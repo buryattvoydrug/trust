@@ -1,0 +1,50 @@
+.clients{
+  padding: 1px 0 140px;
+  background: $dark;
+  .clients-block{
+    display: flex;
+    margin-top: 45px;
+    .client__item{
+      display: flex;
+      .client__img{
+        margin-right: 60px;
+      }
+      .client-text{
+        .client__text{
+          margin-top: 30px;
+          max-width: 580px;
+        }
+      }
+    }
+  }
+  .arrows{
+    position: absolute;
+    bottom:0;
+    left:315px;
+    .arrow{
+      padding: 5px;
+    }
+    .arrow:nth-child(2){
+      transform: scale(-1,1);
+    }
+  }
+
+  //fonts
+  .section__title{
+    color:$light;
+  }
+  .client__name{
+    font-weight: bold;
+    font-size: 24px;
+    color:$light;
+  }
+  .client__description{
+    color:$light;
+    font-weight: 300;
+  }
+  .client__text{
+    color:$light;
+    font-weight: 300;
+    line-height: 120%;
+  }
+}

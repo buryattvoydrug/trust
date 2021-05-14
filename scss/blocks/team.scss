@@ -1,0 +1,21 @@
+.team{
+  padding-bottom: 140px;
+  .team-block{
+    display: flex;
+    .team__item{
+      width: 260px;
+      margin-right: 60px;
+    }
+  }
+
+
+  //fonts
+  .team__name{
+    font-weight: bold;
+    font-size: 24px;
+  }
+  .team__description{
+    font-weight: 300;
+    font-size: 18px;
+  }
+}

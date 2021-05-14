@@ -1,0 +1,68 @@
+.contact{
+  padding-bottom: 100px;
+  .contact-block{
+    display: flex;
+    .contact__col{
+      width: 450px;
+      .section__subtitle{
+        max-width: 100%;
+      }
+      form{
+        input{
+          width: 100%;
+          border:1px solid #000;
+          background: transparent;
+          height: 60px;
+          margin-bottom: 15px;
+          padding-left: 35px;
+        }
+        textarea{
+          height: 150px;
+          border:1px solid #000;
+          width: 450px;
+          padding: 18px 0 0 35px;
+        }
+      }
+      .contact__button{
+        margin-top: 10px;
+        width: 450px;
+        height: 70px;
+      }
+      .social{
+        .social-block{
+          .social__subtitle{
+            margin-top: 5px;
+          }
+          .social__link{
+            display: block;
+            margin: 5px 0 30px;
+          }
+        }
+      }
+    }
+    .contact__col:nth-child(1){
+      margin-right: 10%;
+    }
+    
+  }
+
+
+  //fonts
+  input,textarea{
+    font-weight: 300;
+    font-size: 20px;
+  }
+  .social__title{
+    font-weight: bold;
+    font-size: 24px;
+  }
+  .social__subtitle span{
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .social__link{
+    font-weight: 300;
+    font-size: 20px;
+    color:$dark;
+  }
+}
