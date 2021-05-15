@@ -22,6 +22,9 @@
   width: 1240px;
   position: relative;
 }
+.no-scroll{
+  overflow-Y:hidden;
+}
 section{
   overflow-x: hidden;
 }

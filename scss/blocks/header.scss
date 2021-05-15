@@ -14,6 +14,7 @@ header,.footer{
 
   //fonts
   .logo{
+    z-index: 2;
     font-weight: 900;
     font-size: 32px;
     color:$light;
@@ -21,15 +22,20 @@ header,.footer{
       color:$blue;
     }
   }
-  nav{
+  nav li a{
     color:$light;
   }
   .phone{
     font-weight: bold;
     font-size: 24px;
     color:$light;
+    z-index: 2;
   }
 }
+.nav-button{
+  display: none;
+}
+
 @media (min-width:1024px) and (max-width:1280px){
   header,.footer{
     padding: 40px 0;
@@ -39,11 +45,74 @@ header,.footer{
   }
 }
 @media (max-width:1023px){
-  header,.footer{
-    padding: 10px 0;
-    nav{
-      display: none;
+  .desk__phone{
+    display: none;
+  }
+  .nav-button{
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    span{
+      display: block;
+      width: 25px;
+      height: 3px;
+      border-radius: 5px;
+      margin: 3px auto;
+      transition: all .8s;
+      background: $light;
     }
+  }
+  .active__button{
+    span:nth-child(2){
+      opacity: 0;
+    }
+    span:nth-child(1){
+      transform: rotate(40deg) translateY(11px);
+    }
+    span:nth-child(3){
+      transform: rotate(-40deg) translateY(-11px);
+    }
+  }
+  header,.footer{
+    nav{
+      z-index: 1;
+      transform: translateX(100%);
+      background: $blue;
+      position: fixed;
+      top:0;
+      left:0;
+      height: 100vh;
+      width: 100vw;
+      flex-direction: column;
+      padding: 35vh 15vw;
+      transition: all .6s;
+      .nav{
+        flex-direction: column;
+        align-items: flex-end;
+        li{
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .active__nav{
+      transform: translateX(0%);
+    }
+    .active__logo{
+      strong{
+        color:$dark !important;
+      }
+    }
+    .phone{
+      margin-left: 120px;
+      width: 60px;
+      height: 60px;
+      background: url('../../images/call.png') no-repeat 50% 50%;
+    }
+    padding: 10px 0;
+    
   
     //fonts
     .logo{
@@ -56,6 +125,11 @@ header,.footer{
     }
     nav{
       color:$light;
+      .nav{
+        li{
+          font-size: 32px;
+        }
+      }
     }
     .phone{
       font-weight: bold;

@@ -9,6 +9,10 @@ $light:#fff;
 
   //fonts
   font-weight: 500;
-  color: $light;
   font-size: 18px;
+  color:$light;
+
+  a{
+    color:$light;
+  }
 }
