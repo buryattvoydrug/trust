@@ -9,7 +9,19 @@ header,.footer{
       width: 100%;
       display: flex;
       justify-content: space-between;
+      li{
+        transition: all .4s;
+      }
+      li:hover{
+        transform: scale(1.15);
+      }
     }
+  }
+  .phone{
+    transition: all .4s;
+  }
+  .phone:hover{
+    transform: scale(1.15);
   }
 
   //fonts
